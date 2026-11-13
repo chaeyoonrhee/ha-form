@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>2년차 하자보수 신청서</title>
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --card: #ffffff;
+    --ink: #1d2433;
+    --muted: #5d6677;
+    --line: #e2e0d8;
+    --accent: #1f3a6e;
+    --accent-ink: #ffffff;
+    --warn: #b42318;
+    --warn-bg: #fdecea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171d;
+      --card: #1d222b;
+      --ink: #eceef2;
+      --muted: #a2aab8;
+      --line: #2e3542;
+      --accent: #7ea2e8;
+      --accent-ink: #0e1626;
+      --warn: #ff8f84;
+      --warn-bg: #3a1f1d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 21px; line-height: 1.35; margin: 0 0 6px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+  .deadline {
+    display: flex; gap: 10px; align-items: center;
+    background: var(--warn-bg); color: var(--warn);
+    border-radius: 10px; padding: 12px 14px; font-weight: 700; margin-bottom: 16px;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; padding: 16px; margin-bottom: 14px;
+  }
+  .card h2 { font-size: 16px; margin: 0 0 10px; }
+  ol { margin: 0; padding-left: 20px; }
+  ol li { margin-bottom: 6px; }
+  .btns { display: grid; gap: 10px; }
+  .btn {
+    display: block; width: 100%; text-align: center; text-decoration: none;
+    font: inherit; font-weight: 700; font-size: 16px;
+    padding: 14px 12px; border-radius: 10px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--card); color: var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .preview { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .hint { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+  .tel { display: flex; justify-content: space-between; gap: 8px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .tel:first-of-type { border-top: 0; }
+  .tel a { color: var(--accent); font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .print-only { display: none; }
+  @media print {
+    @page { size: A4; margin: 0; }
+    body { background: #fff; }
+    .wrap { display: none; }
+    .print-only { display: block; }
+    .print-only img { display: block; width: 100%; height: auto; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>덕은DMC 아이에스비즈타워<br>2년차 하자보수 신청서</h1>
+  <p class="sub">임대인 (주)필로스해운 안내</p>
+
+  <div class="deadline"><span>제출 마감</span><span>2026년 11월 20일(금)</span></div>
+
+  <section class="card">
+    <h2>이렇게 제출해 주세요</h2>
+    <ol>
+      <li>아래 <b>신청서를 내려받거나 인쇄</b>합니다. 우편함에 들어 있는 양식을 쓰셔도 됩니다.</li>
+      <li>동호, 성함, 연락처를 쓰고 <b>임대</b>에 체크한 뒤 서명합니다.</li>
+      <li>실(사무실, 발코니, 기타)별로 하자 내용을 씁니다. <b>하자가 없으면 '없음'</b>이라고 씁니다.</li>
+      <li>관리실에 직접 내거나 <b>입구 전용박스</b>에 넣습니다.</li>
+    </ol>
+    <p class="hint">하자 부위는 사진을 찍어 두시고, 제출한 신청서도 사진으로 남겨 주세요.</p>
+  </section>
+
+  <section class="card">
+    <h2>신청서</h2>
+    <div class="btns">
+      <a class="btn primary" href="form.pdf" download="덕은IS비즈타워_2년차_하자보수신청서.pdf">PDF로 내려받기</a>
+      <button class="btn" type="button" onclick="window.print()">인쇄하기</button>
+      <a class="btn" href="form.png" download="덕은IS비즈타워_2년차_하자보수신청서.png">이미지로 저장</a>
+    </div>
+    <p class="hint">이미지를 누르면 크게 볼 수 있습니다.</p>
+    <a href="form.png" target="_blank" rel="noopener"><img class="preview" src="form.png" alt="덕은 DMC 1차 아이에스비즈타워 하자 보수 신청서 양식"></a>
+  </section>
+
+  <section class="card">
+    <h2>접수처</h2>
+    <div class="tel"><span>관리사무소</span><a href="tel:0231583005">02-3158-3005</a></div>
+    <div class="tel"><span>아이에스동서 CS관리팀<br><small>(전유부분 하자 신청·문의)</small></span><a href="tel:0267305974">02-6730-5974</a></div>
+    <p class="hint">급한 하자는 전화로도 접수할 수 있습니다. 서면 제출도 함께 해 주세요.</p>
+  </section>
+
+  <section class="card">
+    <h2>관리사무소 안내문</h2>
+    <a class="btn" href="notice-and-form.pdf" download="덕은IS비즈타워_2년차_하자_안내문.pdf">안내문 전체(PDF) 내려받기</a>
+  </section>
+</main>
+
+<div class="print-only"><img src="form.png" alt=""></div>
+</body>
+</html>
